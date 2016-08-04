@@ -1,0 +1,28 @@
+{
+	"name": "jstewmc/authorize-group",
+	"description": "Authorize access-control-list (ACL) group",
+	"keywords": ["php", "jstewmc", "authorize", "group", "access", "control", "list", "acl"],
+	"authors": [
+		{
+			"name": "Jack Clayton",
+			"email": "clayjs0@gmail.com"	
+		}
+	],
+	"repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/jstewmc/test-case"
+        }   	
+	],
+	"require": {
+		"php": "^7.0"
+	},
+	"require-dev": {
+		"jstewmc/test-case": "^0.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"Jstewmc\\AuthorizeGroup\\": "src/"
+		}
+	}
+}
