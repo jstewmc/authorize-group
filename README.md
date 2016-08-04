@@ -10,7 +10,7 @@ This library uses the following terminology:
 * An _action_ is something done to a resource, typically a CRUD operation. By convention, actions are singular, present-tense, and lower-case (e.g., `'create'`).
 * A _permission_ is the right to perform an _action_ on a _resource_ (e.g., `'create'` + `'users'`).
 * A _role_ is a named set of permissions. By convention, roles are singular and lower-cased (e.g., `'administrator'`)
-* A _group_ is a set of users. By convention, groups are plural and lower-case (e.g., `'administrators'`).
+* A _group_ is a set of users with a _unique_ name. By convention, groups are plural and lower-case (e.g., `'administrators'`).
 
 ## Methodology
 
@@ -21,7 +21,7 @@ This library's methodology is rather simple:
 3. A _role_ is granted one or more _permissions_.
 4. A _permission_ allows an _action_ on a _resource_.
 
-While _users_ are assigned one or more _groups_ in the database, a _group_ is assigned a _role_ and a _role_ is assigned permissions in a configuration array.
+While _users_ are assigned one or more _groups_ in the database, a _group_ is assigned a _role_ and a _role_ is assigned _permissions_ in a configuration array.
 
 ## Example
 
@@ -34,7 +34,7 @@ use Jstewmc\AuthorizeGroup;
 $roles = [
     // the "administrator" role...
     'administrator' => [
-        // for the "user" resource...
+        // for the "users" resource...
         'users' => [
             // has the "create" action
             'create'   
