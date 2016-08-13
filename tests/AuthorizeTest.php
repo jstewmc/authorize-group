@@ -1,6 +1,6 @@
 <?php
 /**
- * The file for the authorize tests
+ * The file for the authorize-group service tests
  *
  * @author     Jack Clayton <clayjs0@gmail.com>
  * @copyright  2016 Jack Clayton
@@ -12,7 +12,7 @@ namespace Jstewmc\AuthorizeGroup;
 use Jstewmc\TestCase\TestCase;
 
 /**
- * Tests for the authorize class
+ * Tests for the authorize-group service
  */
 class AuthorizeTest extends TestCase
 {

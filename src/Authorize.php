@@ -1,6 +1,6 @@
 <?php
 /**
- * The file for the authorize-group context
+ * The file for the authorize-group service
  *
  * @author     Jack Clayton <clayjs0@gmail.com>
  * @copyright  2016 Jack Clayton
@@ -10,7 +10,7 @@
 namespace Jstewmc\AuthorizeGroup;
 
 /**
- * The authorize-group context
+ * The authorize-group service
  *
  * @since  0.1.0
  */
@@ -36,7 +36,7 @@ class Authorize
     /* !Magic methods */
     
     /**
-     * Called when the context is constructed
+     * Called when the service is constructed
      *
      * @param  mixed[]  $groups  the application's groups
      * @param  mixed[]  $roles   the application's roles
@@ -48,9 +48,11 @@ class Authorize
         $this->roles  = $roles;
     }
     
-    
     /**
-     * Returns true if the group is authorized to perform the action on the resource 
+     * Called when the service is treated like a function
+     *
+     * I'll return true if the group is authorized to perform the action on the 
+     * resource.
      *
      * @param   Group   $group     a user group
      * @param   string  $action    the desired action (e.g., "create")
